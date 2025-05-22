@@ -3,8 +3,8 @@ package com.example.cryptoapp.data.model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-data class CoinInfoListOfDataDto (
-    @SerializedName("Data")
+data class Datum (
+    @SerializedName("CoinInfo")
     @Expose
-    val data: List<CoinNameContainerDto>? = null
+    val coinInfo: CoinInfo? = null
 )

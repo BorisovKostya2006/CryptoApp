@@ -1,9 +1,9 @@
 package com.example.cryptoapp.domain
 
 import androidx.lifecycle.LiveData
-import com.example.cryptoapp.data.model.CoinNameDto
+import com.example.cryptoapp.data.model.CoinInfo
 
 interface CoinRepository {
-    fun getListCoinInfo() : LiveData<List<CoinNameDto>>
-    fun getCoinInfo(fromSymbl : String) : LiveData<CoinNameDto>
+    fun getListCoinInfo() : LiveData<List<CoinInfo>>
+    fun getCoinInfo(fromSymbl : String) : LiveData<CoinInfo>
 }
